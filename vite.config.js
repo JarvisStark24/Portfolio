@@ -5,6 +5,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 80,
-    host: true, // this ensures Vite listens on all network interfaces
+    host: true,
+  },
+  build: {
+    sourcemap: false,
   },
 });
