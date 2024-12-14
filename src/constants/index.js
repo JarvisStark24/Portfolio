@@ -153,7 +153,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Aug 2019 - Feb 2020",
     points: [
-      "Participating in designing commissioning/qualification/verification (CQV) protocols for new project development and acquisition.",
+      "Participating in designing (CQV) protocols for new project development and acquisition.",
       "Providing troubleshooting expertise to HP APAC in development for enhanced user experience.",
       "Designing cross-functional interactions to reduce dependency and redundancy between diverse operational teams.",
       "Presenting new design and operational guidelines to senior engineers, resulting in a 47% improvement in task completion.",

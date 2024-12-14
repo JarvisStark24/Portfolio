@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa"; // Import social media icons
+import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -30,7 +31,9 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"}`}
+      } w-full flex items-center py-5 fixed top-0 z-20 ${
+        scrolled ? "bg-primary" : "bg-transparent"
+      }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -41,7 +44,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="logo" className="w-20 h-20 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Sandip &nbsp;
             <span className="sm:block hidden"> | Kumar Das</span>
@@ -63,21 +66,41 @@ const Navbar = () => {
         </ul>
 
         {/* Social Media Links (Desktop View) */}
-        <div className="hidden sm:flex gap-6">
-          <a href="https://www.facebook.com/profile.php?id=61555990483036" target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="text-white text-2xl hover:text-secondary" />
+        <div className="hidden sm:flex gap-6 items-center">
+          <a
+            href="https://www.facebook.com/profile.php?id=61555990483036"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="text-white text-3xl hover:text-secondary transform transition-transform duration-300 hover:scale-110" />
           </a>
-          <a href="https://www.instagram.com/code_with.jarvis/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-white text-2xl hover:text-secondary" />
+          <a
+            href="https://www.instagram.com/code_with.jarvis/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-white text-3xl hover:text-secondary transform transition-transform duration-300 hover:scale-110" />
           </a>
-          <a href="https://x.com/MeJarvis_7" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="text-white text-2xl hover:text-secondary" />
+          <a
+            href="https://x.com/MeJarvis_7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaXTwitter className="text-white text-3xl hover:text-secondary transform transition-transform duration-300 hover:scale-110" />
           </a>
-          <a href="https://github.com/JarvisStark24" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="text-white text-2xl hover:text-secondary" />
+          <a
+            href="https://github.com/JarvisStark24"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-white text-3xl hover:text-secondary transform transition-transform duration-300 hover:scale-110" />
           </a>
-          <a href="https://www.linkedin.com/in/sandip798/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-white text-2xl hover:text-secondary" />
+          <a
+            href="https://www.linkedin.com/in/sandip798/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="text-white text-3xl hover:text-secondary transform transition-transform duration-300 hover:scale-110" />
           </a>
         </div>
 
@@ -111,21 +134,46 @@ const Navbar = () => {
               ))}
 
               {/* Social Media Links (Mobile View) */}
-              <li className="flex gap-6 justify-end items-center mt-6">
-                <a href="https://www.facebook.com/profile.php?id=61555990483036" target="_blank" rel="noopener noreferrer">
-                  <FaFacebook className="text-white text-2xl hover:text-secondary" />
+              <li className="flex flex-col gap-6 mt-6 ml-5 justify-center items-center">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61555990483036"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center w-12 h-12 rounded-full bg-gray-700 hover:bg-secondary transform transition-all duration-300 hover:scale-110"
+                >
+                  <FaFacebook className="text-white text-2xl" />
                 </a>
-                <a href="https://www.instagram.com/code_with.jarvis/" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram className="text-white text-2xl hover:text-secondary" />
+                <a
+                  href="https://www.instagram.com/code_with.jarvis/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center w-12 h-12 rounded-full bg-gray-700 hover:bg-secondary transform transition-all duration-300 hover:scale-110"
+                >
+                  <FaInstagram className="text-white text-2xl" />
                 </a>
-                <a href="https://x.com/MeJarvis_7" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter className="text-white text-2xl hover:text-secondary" />
+                <a
+                  href="https://x.com/MeJarvis_7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center w-12 h-12 rounded-full bg-gray-700 hover:bg-secondary transform transition-all duration-300 hover:scale-110"
+                >
+                  <FaXTwitter className="text-white text-2xl" />
                 </a>
-                <a href="https://github.com/JarvisStark24" target="_blank" rel="noopener noreferrer">
-                  <FaGithub className="text-white text-2xl hover:text-secondary" />
+                <a
+                  href="https://github.com/JarvisStark24"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center w-12 h-12 rounded-full bg-gray-700 hover:bg-secondary transform transition-all duration-300 hover:scale-110"
+                >
+                  <FaGithub className="text-white text-2xl" />
                 </a>
-                <a href="https://www.linkedin.com/in/sandip798/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin className="text-white text-2xl hover:text-secondary" />
+                <a
+                  href="https://www.linkedin.com/in/sandip798/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center w-12 h-12 rounded-full bg-gray-700 hover:bg-secondary transform transition-all duration-300 hover:scale-110"
+                >
+                  <FaLinkedin className="text-white text-2xl" />
                 </a>
               </li>
             </ul>
