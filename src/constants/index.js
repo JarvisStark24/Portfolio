@@ -130,7 +130,9 @@ const experiences = [
       "Ensuring cross-browser compatibility and implementing responsive designs.",
       "Deploying and managing applications using AWS, Google Cloud, Docker, and other cloud platforms.",
       "Participating in code reviews and maintaining clean, efficient, and maintainable codebases.",
+      "System Design: LucidChart, Sharding, MicroServices, Load Balancers, CDN, Caching, Logging, Monitoring, NGINX."
     ],
+    
   },
   {
     title: "Senior Business Analyst",
