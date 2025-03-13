@@ -137,7 +137,7 @@ const experiences = [
     company_name: "Byjus",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Aug 2020 - Nov 2022",
     points: [
       "Conducting interviews with key business users to collect information on business processes and user requirements.",
       "Analyzing application usage and providing data to the frontend development team with actionable insights.",
